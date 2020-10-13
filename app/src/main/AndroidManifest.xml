@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.projekbureni.bismillah">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".pilih_fasilitas" />
+        <activity android:name=".kamar_standard" />
+        <activity android:name=".kamar_superior" />
+        <activity android:name=".kamar_suite" />
+        <activity android:name=".lanjutan" />
+        <activity android:name=".lanjutan_superior" />
+        <activity android:name=".lanjutan_suite" />
+        <activity android:name=".verifikasi" />
+        <activity android:name=".verifikasi_suite" />
+        <activity android:name=".verifikasi_superior" />
+        <activity android:name=".biaya" />
+        <activity android:name=".biaya_suite" />
+        <activity android:name=".biaya_superior" />
+        <activity android:name=".kamar_suite2" />
+        <activity android:name=".kamar_suite3" />
+        <activity android:name=".lanjutan_suite2" />
+        <activity android:name=".lanjutan_suite3" />
+        <activity android:name=".verifikasi_suite2" />
+        <activity android:name=".verifikasi_suite3" />
+        <activity android:name=".biaya_suite2" />
+        <activity android:name=".biaya_suite3" />
+        <activity android:name=".navbar" />
+        <activity android:name=".menuiis" />
+        <activity android:name=".menuiis1" />
+        <activity android:name=".menuiis2" />
+        <activity android:name=".menuiis3" />
+        <activity android:name=".menuiis4" />
+        <activity android:name=".diskon" />
+        <activity android:name=".about"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg4">
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="16dp" android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textSize="15dp"
+            android:textColor="#000"
+            android:text="PILIH FASILITAS YANG ANDA MAU"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/standard1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/deluxeroom1" />
+
+        <ImageButton
+            android:id="@+id/superior1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/loftroom1" />
+
+        <ImageButton
+            android:id="@+id/suite1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/deluxesuite1"/>
+        <ImageButton
+            android:id="@+id/suite2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/rockstarsuite1"/>
+        <ImageButton
+            android:id="@+id/suite3"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/kingsuite1"/>
+
+    </LinearLayout>
+    </ScrollView>

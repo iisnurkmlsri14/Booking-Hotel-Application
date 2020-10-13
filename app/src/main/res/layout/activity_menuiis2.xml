@@ -1,0 +1,106 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity"
+    android:background="#000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:measureWithLargestChild="false"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/layout_toolbar" />
+        <RelativeLayout
+            android:id="@+id/header1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_material_light"
+            android:layout_alignParentBottom="true">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="-10dp"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/deluxesuite1" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:background="#f5b087"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:srcCompat="@drawable/jadideluxesu"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/scrollView2"
+                android:layout_below="@+id/imageView2"
+                android:layout_above="@+id/imageView1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="35dp"
+                        android:layout_marginEnd="35dp"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginTop="15dp"
+                        android:textColor="#000"
+                        android:text="\n\t\tSebuah Suite yang terdiri dari satu kamar utama Deluxe, kamar mandi dengan fasilitas deluxe dan ruang keluarga dengan meja makan dan dua tempat tidur harian bergaya Bali (cocok untuk anak – anak).
+
+\n\t\tUkuran kamar: 64 m2
+\n\t\tTipe ranjang: 1 King Bed dan 2 Day Beds
+\n\t\tTidur: 2 Dewasa dan 2 Anak (di bawah 12 tahun)
+\n\t\tAccess ke Rock Royalty Lounge
+\n\t\tFitur Kamar dan Fasilitas
+
+\n\t\t100% bebas asap rokok
+\n\t\tKamar mandi dan hair dryer
+\n\t\tFasilitas mandi Rock Spa®
+\n\t\tJubah mandi dan sandal
+\n\t\tMini Bar dan fasilitas pembuat teh / kopi termasuk mesin Nespresso Coffee Pod
+\n\t\tBalkon bergaya Perancis
+\n\t\tWiFi gratis
+\n\t\tBose Bluetooth Speaker
+\n\t\tIPTV Entertainment System dengan Film gratis
+\n\t\tInternational Satellite TV
+\n\t\tIDD Telephone
+\n\t\tA/C control individual
+\n\t\tFasilitas penyimpanan dalam kamar
+\n\t\tLayanan kamar 24 jam"/>
+                </RelativeLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/layout_header"
+        app:menu="@menu/item_navigasi" />
+</android.support.v4.widget.DrawerLayout>

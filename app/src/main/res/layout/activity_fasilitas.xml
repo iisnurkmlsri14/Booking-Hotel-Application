@@ -1,0 +1,61 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg4"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    tools:context=".pilih_fasilitas">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:measureWithLargestChild="false"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/layout_toolbar" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="10dp"
+            android:textColor="#df2eea"
+            android:text="PILIH FASILITAS YANG ANDA MAU"
+            android:textStyle="bold" />
+
+
+        <ImageButton
+            android:id="@+id/standard1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/deluxeroom1" />
+
+
+        <ImageButton
+            android:id="@+id/superior1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/loftroom1" />
+
+        <ImageButton
+            android:id="@+id/suite1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/deluxesuite1"/>
+        <ImageButton
+            android:id="@+id/suite2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/rockstarsuite1"/>
+        <ImageButton
+            android:id="@+id/suite3"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/kingsuite1"/>
+    </LinearLayout>
+</ScrollView>
+
+
